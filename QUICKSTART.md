@@ -16,11 +16,6 @@ cd "d:\Social Media Content Analyzer\Frontend"
 npm run dev
 ```
 
-### Option 2: Using VS Code Tasks
-
-1. Press `Ctrl+Shift+P`
-2. Type "Tasks: Run Task"
-3. Select "Start Backend and Frontend"
 
 ## Access the Application
 
@@ -60,56 +55,9 @@ $proc = Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Sel
 Stop-Process -Id $proc -Force
 ```
 
-### Module Not Found
 
-```powershell
-# Reinstall dependencies
-cd Backend
-npm install
 
-cd ../Frontend
-npm install
-```
 
-### CORS Errors
-
-Make sure the backend is running on port 3001 and the frontend is configured to use `http://localhost:3001/api`.
-
-## API Testing with curl
-
-```powershell
-# Upload a file
-curl -X POST http://localhost:3001/api/upload `
-  -F "file=@path\to\your\file.pdf"
-
-# Check job status (replace JOB_ID)
-curl http://localhost:3001/api/jobs/JOB_ID
-
-# Health check
-curl http://localhost:3001/api/health
-```
-
-## Development Commands
-
-### Backend
-
-```powershell
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run start    # Start production server
-npm run lint     # Run linter
-npm run format   # Format code
-```
-
-### Frontend
-
-```powershell
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run linter
-npm run format   # Format code
-```
 
 ## Next Steps
 
