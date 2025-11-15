@@ -1,4 +1,5 @@
 {
+  "name": "social-media-analyzer-backend",
   "version": 2,
   "builds": [
     {

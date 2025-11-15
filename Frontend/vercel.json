@@ -1,4 +1,5 @@
 {
+  "name": "social-media-analyzer-frontend",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
